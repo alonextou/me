@@ -1,0 +1,61 @@
+@import "libs/bootstrap.min";
+
+@import "libs/font-awesome/font-awesome";
+@import "animations";
+@import "header";
+@import "menu";
+@import "login";
+
+body{
+	background: #f7f7f7;
+}
+
+#footer{
+	height: 200px;
+	background-color: #242D35;
+}
+
+#wrap{
+
+}
+
+/* Main */
+
+#main{
+	margin: 0;
+}
+
+#content{
+	padding-top: 20px;
+	margin-bottom: -50px;
+	padding-bottom: 70px;
+}
+
+#content p{
+	font-size: 16px;
+	line-height: 26px;
+}
+
+#content h3{
+	background: #242d35;
+	padding: 10px;
+	font-size: 18px;
+	font-weight: bold;
+	letter-spacing: 1px;
+	color: #fff;
+	margin-top: 0;
+}
+
+/* Skills */
+
+#skills .progress{
+	padding: 2px;
+	margin-bottom: 10px;
+	background: #fff;
+	border-radius: 3px;
+	border: 1px solid #ccc;
+}
+
+#skills .progress-bar{
+	border-radius: 3px;
+}

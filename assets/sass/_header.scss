@@ -1,0 +1,87 @@
+/* Sky */
+
+#sky{
+	background: #ea5654;
+	padding: 20px 0;
+	color: #fff;
+}
+
+#sky h1{
+	margin: 0;
+	letter-spacing: 1px;
+	font-size: 48px;
+	line-height: 48px;
+	font-weight: bold;
+	text-shadow: 1px 1px 1px #eee, 2px 2px 1px #999, 3px 3px 1px #777;
+}
+
+#social i {
+	height: 46px;
+	width: 46px;
+	font-size: 28px;
+	line-height: 48px;
+	margin: 0 0 0 15px;
+}
+
+/* Roof */
+
+#roof{
+	background: #242d35;
+	color: #fff;
+	padding: 20px 0;
+	position: relative;
+	z-index: 20;
+}
+
+#description{
+	box-sizing: border-box;
+	padding-right: 30px;
+}
+
+#description img{
+	margin-top: 5px;
+}
+
+#description h2{
+	margin: 0;
+	font-weight: bold;
+	margin-bottom: 16px;
+}
+
+#description p{
+	font-size: 16px;
+	line-height: 26px;
+	margin: 0;
+}
+
+#contact li a{
+	color: #ea5654;
+	background: none;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+#contact li:hover a i{
+	color: #ea5654;
+}
+
+#contact li:hover a span{
+	color: #fff;
+}
+
+
+#contact li a i{
+	display: inline-block;
+	width: 24px;
+	color: #fff;
+	margin-right: 20px;
+}
+
+#contact li a span{
+	float: right;
+	letter-spacing: 1px;
+}
+
+#contact .divider{
+	border-bottom: 1px solid #999;
+}
