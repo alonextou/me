@@ -5,6 +5,7 @@
 	"devDependencies": {
 		"grunt": "~0.4.1",
 		"deployd": "~0.6.10",
+		"connect": "~2.9.0",
 		"grunt-contrib-copy": "~0.4.1",
 		"grunt-contrib-watch": "~0.5.1",
 		"grunt-contrib-compass": "~0.3.0",
