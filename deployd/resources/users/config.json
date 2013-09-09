@@ -1,0 +1,13 @@
+{
+	"type": "UserCollection",
+	"properties": {
+		"groups": {
+			"name": "groups",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "groups",
+			"order": 0
+		}
+	}
+}
