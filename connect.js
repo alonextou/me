@@ -4,7 +4,7 @@ var deployd = require('deployd');
 
 var dpd = deployd({
 	port: 2403,
-	env: 'development'
+	env: config.env
 });
 
 process.chdir(__dirname + '/deployd');
