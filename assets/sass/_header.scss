@@ -28,6 +28,11 @@
 	margin: 0 0 0 15px;
 }
 
+#social a{
+	color: #fff;
+	text-decoration: none;
+}
+
 /* Roof */
 
 #roof{
@@ -59,34 +64,43 @@
 	margin: 0;
 }
 
-#contact li a{
+#contact li a, #contact li{
 	color: #ea5654;
 	background: none;
 	font-size: 16px;
 	font-weight: bold;
 }
 
-#contact li:hover a i{
+#contact li{
+	padding: 10px 15px;
+}
+
+#contact li a{
+	padding: 0;
+}
+
+#contact li:hover a i, #contact li:hover i{
 	color: #ea5654;
 }
 
-#contact li:hover a span{
+#contact li:hover a span, #contact li:hover span{
 	color: #fff;
 }
 
 
-#contact li a i{
+#contact li a i, #contact li i{
 	display: inline-block;
 	width: 24px;
 	color: #fff;
 	margin-right: 20px;
 }
 
-#contact li a span{
+#contact li a span, #contact li span{
 	float: right;
 	letter-spacing: 1px;
 }
 
 #contact .divider{
 	border-bottom: 1px solid #999;
+	padding: 0;
 }
