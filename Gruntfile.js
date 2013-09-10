@@ -39,7 +39,7 @@ module.exports = function(grunt) {
                     }
                 },
 				src: 'app/app.js',
-				dest: 'public/dev/js/global.js'
+				dest: 'public/dev/js/app.js'
 			}
 		},
        	copy: {
@@ -50,8 +50,10 @@ module.exports = function(grunt) {
                     cwd: 'public/dev',
                     dest: 'public/prod',
                     src: [
+                        'js/libs.js',
                         'js/global.js',
-                        'js/templates.js'
+                        'js/libs/html5shiv.js',
+                        'js/libs/respond.min.js'
                     ]
                 }]
             }
@@ -74,6 +76,14 @@ module.exports = function(grunt) {
 		},
 		usemin: {
 			html: ['public/prod/index.html'],
+		},
+		clean: ["public/prod/js/**/*", "public/prod/css/**/*"],
+		rev: {
+			assets: {
+				files: [{
+					src: ['public/prod/js/libs.js', 'public/prod/js/global.js', 'public/prod/css/global.css']
+				}]
+			}
 		},
         emberTemplates: {
             options: {
@@ -108,7 +118,7 @@ module.exports = function(grunt) {
 	});
 
 	grunt.registerTask('default', ['compass:dev', 'neuter', 'emberTemplates']);
-	grunt.registerTask('prod', ['compass:prod', 'neuter', 'emberTemplates', 'copy', 'htmlmin', 'useminPrepare', 'concat', 'uglify', 'usemin' ]);
+	grunt.registerTask('prod', ['clean', 'compass:prod', 'neuter', 'emberTemplates', 'copy', 'htmlmin', 'useminPrepare', 'concat', 'uglify', 'rev', 'usemin' ]);
 	grunt.registerTask('run', ['database', 'watch']);
 
 	grunt.loadNpmTasks('grunt-contrib-compass');
@@ -121,5 +131,7 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-htmlmin');
 	grunt.loadNpmTasks('grunt-ember-templates');
 	grunt.loadNpmTasks('grunt-contrib-connect');
+	grunt.loadNpmTasks('grunt-rev');
+	grunt.loadNpmTasks('grunt-contrib-clean');
 
 };

@@ -1,10 +1,12 @@
 @import "libs/bootstrap.min";
-
 @import "libs/font-awesome/font-awesome";
 @import "animations";
 @import "header";
 @import "menu";
 @import "login";
+@import "responsive";
+
+/* Layout */
 
 body{
 	background: #f7f7f7;
@@ -13,10 +15,6 @@ body{
 #footer{
 	height: 200px;
 	background-color: #242D35;
-}
-
-#wrap{
-
 }
 
 /* Main */

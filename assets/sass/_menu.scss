@@ -12,10 +12,10 @@
 
 #menu{
 	text-align: center;
-	width: 1170px;
 	margin: auto;
 	border: none;
 	border-radius: 0;
+	width: 1170px;
 }
 
 #menu .navbar-nav > li > a {
@@ -23,10 +23,7 @@
 	padding-left: 20px;
 	padding-right: 20px;
 	color: #333;
-}
-
-#menu .navbar-nav > li:first-child > a {
-
+	outline: 0;
 }
 
 #menu .navbar-nav > li > a i {

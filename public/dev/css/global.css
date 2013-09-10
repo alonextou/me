@@ -10111,10 +10111,10 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
 /* line 13, ../../../assets/sass/_menu.scss */
 #menu {
   text-align: center;
-  width: 1170px;
   margin: auto;
   border: none;
   border-radius: 0;
+  width: 1170px;
 }
 
 /* line 21, ../../../assets/sass/_menu.scss */
@@ -10123,9 +10123,10 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
   padding-left: 20px;
   padding-right: 20px;
   color: #333;
+  outline: 0;
 }
 
-/* line 32, ../../../assets/sass/_menu.scss */
+/* line 29, ../../../assets/sass/_menu.scss */
 #menu .navbar-nav > li > a i {
   margin-right: 5px;
   font-size: 18px;
@@ -10133,7 +10134,7 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
   display: none;
 }
 
-/* line 39, ../../../assets/sass/_menu.scss */
+/* line 36, ../../../assets/sass/_menu.scss */
 #menu .navbar-nav > li > a span {
   font-size: 15px;
   text-transform: uppercase;
@@ -10142,13 +10143,13 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
   letter-spacing: 1px;
 }
 
-/* line 47, ../../../assets/sass/_menu.scss */
+/* line 44, ../../../assets/sass/_menu.scss */
 #menu .navbar-nav > li > a:hover {
   background: #ea5654;
   color: #fff;
 }
 
-/* line 52, ../../../assets/sass/_menu.scss */
+/* line 49, ../../../assets/sass/_menu.scss */
 #menu .navbar-form {
   padding-right: 0;
 }
@@ -10201,37 +10202,98 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
   border-top-right-radius: 0;
 }
 
-/* line 9, ../../../assets/sass/global.scss */
+/* line 1, ../../../assets/sass/_responsive.scss */
+.container {
+  max-width: none !important;
+  width: 1170px !important;
+}
+
+/* line 6, ../../../assets/sass/_responsive.scss */
+#wrap, #footer {
+  min-width: 1170px;
+}
+
+/* line 10, ../../../assets/sass/_responsive.scss */
+#menu .navbar-collapse {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+/* line 15, ../../../assets/sass/_responsive.scss */
+#menu .navbar-collapse {
+  display: block !important;
+  height: auto !important;
+  padding-bottom: 0;
+  overflow: visible !important;
+}
+
+/* line 22, ../../../assets/sass/_responsive.scss */
+#menu .navbar-nav {
+  float: left;
+  margin: 0;
+}
+
+/* line 27, ../../../assets/sass/_responsive.scss */
+#menu .navbar-nav > li {
+  float: left;
+}
+
+/* line 31, ../../../assets/sass/_responsive.scss */
+.navbar-form .form-group {
+  display: inline-block;
+  margin: 0;
+}
+
+/* line 36, ../../../assets/sass/_responsive.scss */
+.navbar-form .form-control {
+  display: inline-block;
+}
+
+/* line 40, ../../../assets/sass/_responsive.scss */
+.navbar-form {
+  width: auto;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-right: 0;
+  margin-left: 0;
+  border: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  float: right;
+}
+
+/* Layout */
+/* line 11, ../../../assets/sass/global.scss */
 body {
   background: #f7f7f7;
 }
 
-/* line 13, ../../../assets/sass/global.scss */
+/* line 15, ../../../assets/sass/global.scss */
 #footer {
   height: 200px;
   background-color: #242D35;
 }
 
 /* Main */
-/* line 24, ../../../assets/sass/global.scss */
+/* line 22, ../../../assets/sass/global.scss */
 #main {
   margin: 0;
 }
 
-/* line 28, ../../../assets/sass/global.scss */
+/* line 26, ../../../assets/sass/global.scss */
 #content {
   padding-top: 20px;
   margin-bottom: -50px;
   padding-bottom: 70px;
 }
 
-/* line 34, ../../../assets/sass/global.scss */
+/* line 32, ../../../assets/sass/global.scss */
 #content p {
   font-size: 16px;
   line-height: 26px;
 }
 
-/* line 39, ../../../assets/sass/global.scss */
+/* line 37, ../../../assets/sass/global.scss */
 #content h3 {
   background: #242d35;
   padding: 10px;
@@ -10243,7 +10305,7 @@ body {
 }
 
 /* Skills */
-/* line 51, ../../../assets/sass/global.scss */
+/* line 49, ../../../assets/sass/global.scss */
 #skills .progress {
   padding: 2px;
   margin-bottom: 10px;
@@ -10252,7 +10314,7 @@ body {
   border: 1px solid #ccc;
 }
 
-/* line 59, ../../../assets/sass/global.scss */
+/* line 57, ../../../assets/sass/global.scss */
 #skills .progress-bar {
   border-radius: 3px;
 }
