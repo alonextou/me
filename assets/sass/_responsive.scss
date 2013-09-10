@@ -10,6 +10,7 @@
 #menu .navbar-collapse {
 	margin-right: 0;
 	margin-left: 0;
+	border: 0;
 }
 
 #menu .navbar-collapse {
@@ -28,16 +29,16 @@
   float: left;
 }
 
-.navbar-form .form-group{
+#menu .navbar-form .form-group{
 	display: inline-block;
 	margin: 0;
 }
 
-.navbar-form .form-control {
+#menu .navbar-form .form-control {
 	display: inline-block;
 }
 
-.navbar-form{
+#menu .navbar-form{
 	width: auto;
 	padding-top: 0;
 	padding-bottom: 0;
